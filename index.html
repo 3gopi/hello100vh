@@ -6,24 +6,33 @@
     <title>Document</title>
     <style>
         body {
-            height: 100vh; /* Use 100vh to ensure the body takes up the full viewport height */
-            margin: 0; /* Remove default margin */
+            margin: 0;
             background-color: antiquewhite;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner {
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            background-color: antiquewhite;
         }
-@media (max-width: 576px){
-  body{
-    height: 100%;
-  }
-}
+
+        @media (max-width: 600px) {
+            .banner {
+                height: 100vh;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>
-        Hello, this is Gopi, the next Apple Company CEO
-    </h1>
+    <div class="banner">
+        <h1>Hello, this is Gopi, the next Apple Company CEO</h1>
+    </div>
 </body>
 </html>
